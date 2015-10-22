@@ -336,7 +336,8 @@ swr_render_condition(struct pipe_context *pipe,
 
 
 struct pipe_context *
-swr_create_context(struct pipe_screen *screen, void *priv)
+swr_create_context(struct pipe_screen *screen, void *priv,
+                   unsigned flags)
 {
    struct swr_context *ctx = CALLOC_STRUCT(swr_context);
    ctx->blendJIT =

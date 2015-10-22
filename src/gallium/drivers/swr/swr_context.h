@@ -160,7 +160,7 @@ swr_context(struct pipe_context *pipe)
    return (struct swr_context *)pipe;
 }
 
-struct pipe_context *swr_create_context(struct pipe_screen *, void *priv);
+struct pipe_context *swr_create_context(struct pipe_screen *, void *priv, unsigned flags);
 
 void swr_state_init(struct pipe_context *pipe);
 
